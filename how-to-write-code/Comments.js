@@ -9,4 +9,10 @@
    multi-line
    comments. */
 
+   /* Why does it only run with the command 
+   "node /Users/ariellewaks/Projects/LaunchCode/javascript-projects/how-to-write-code/Comments.js"
+   instead of 
+   "node Comments"
+   ??? */
+
    console.log("Comments make your code more readable by others.");
