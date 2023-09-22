@@ -50,7 +50,9 @@ function generatePassword(string1, string2) {
   let code = '';
 
   /// Code your Bonus Mission Solution here ///
-  for (i = 0; i < string1.length || i < string2.length || i++) {
+  for (i = 0; i < string1.length || i < string2.length; i++) {
+    let letter1 = string1.slice(i, i+1)
+    let letter2 = string2.slice(i, i+1)
     
   }
 
