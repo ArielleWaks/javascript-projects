@@ -9,7 +9,6 @@ let beverages = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
 let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
 let pantry = [protein, grains, veggies, beverages, desserts];
 
-
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
@@ -20,7 +19,10 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   // for (let i = 0; i < numMeals; i++) {
     for (let j = 0; j < numMeals; j++) {
       let meal = [];
-      meal.push(pantry[0][j], pantry[1][j], pantry[2][j], pantry[3][j], pantry[4][j]);
+      // for (shelf = 0; shelf < pantry.length; shelf++) {
+      //   meal.push(pantry[shelf][j]);
+      // }
+      pantry.map( shelf => meal.push(shelf[j]))
       meals.push(meal);
     }
     // let meal = [pantry[0][i], pantry[1][i], pantry[2][i], pantry[3][i], pantry[4][i]];
