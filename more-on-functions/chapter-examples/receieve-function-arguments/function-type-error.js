@@ -1,5 +1,5 @@
 function callMe(func) {
-    func();
+    func(); // TypeError: func is not a function
 }
 
-callMe("Al");
+callMe("Al"); // TypeError: func is not a function

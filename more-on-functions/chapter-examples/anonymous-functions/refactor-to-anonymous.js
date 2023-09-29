@@ -4,4 +4,13 @@ function reverse(str) {
   return reversedLettersArray.join('');
 }
 
-console.log(reverse("LaunchCode"));
+console.log(reverse("LaunchCode")); // edoChcnuaL
+
+let f1 = function(str) {
+  return str + str;
+};
+
+let f2 = f1;
+
+console.log(f1("abcd"));
+console.log(f2("abcd"));
